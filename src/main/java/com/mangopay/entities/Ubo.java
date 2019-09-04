@@ -45,6 +45,12 @@ public class Ubo extends EntityBase {
      */
     @SerializedName("Birthplace")
     private Birthplace birthplace;
+    
+    /**
+     * IsActive - Activation status for a UBO. Active by default, could only be set to inactive once.     
+     */
+    @SerializedName("IsActive")
+    private Boolean isActive;
 
     public String getFirstName() { return firstName; }
 
@@ -69,6 +75,10 @@ public class Ubo extends EntityBase {
     public Birthplace getBirthplace() { return birthplace; }
 
     public void setBirthplace(Birthplace birthplace) { this.birthplace = birthplace; }
+    
+    public Boolean isActive() { return isActive; }
+
+    public void setActive(Boolean isActive) { this.isActive = isActive; }
 
     /**
      * Gets map which property is an object and what type of object.
