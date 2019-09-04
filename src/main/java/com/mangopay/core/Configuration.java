@@ -29,7 +29,7 @@ public class Configuration {
     /**
      * [INTERNAL USAGE ONLY] Switch debug mode: log all request and response data.
      */
-    private boolean debugMode = false;
+    private boolean debugMode = true;
 
     /**
      * Connection Timeout.
