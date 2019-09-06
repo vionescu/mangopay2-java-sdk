@@ -103,7 +103,8 @@ public class UboDeclaration extends EntityBase {
 
         Map<String, Type> result = super.getSubObjects();
 
-        result.put("Ubos", Ubo.class);
+		// TODO: this is an issue, had to comment this out, otherwise parsing does not work
+		// result.put("Ubos", Ubo.class);
 
         return result;
     }

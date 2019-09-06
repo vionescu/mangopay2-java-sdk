@@ -384,7 +384,10 @@ public class RestTool {
                     osw.write(requestBody);
                     osw.flush();
                 }
-            }
+            } else if ("POST".equalsIgnoreCase(this.requestType)) {
+				connection.getOutputStream().flush();
+				connection.getOutputStream().close();
+			}
 
 
             // get response

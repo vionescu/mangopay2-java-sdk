@@ -48,7 +48,7 @@ public class UboDeclarationApiImpl extends ApiBase implements UboDeclarationApi 
 
     @Override
     public Ubo updateUbo(String userId, String uboDeclarationId, Ubo ubo) throws Exception {
-        return this.updateObject(Ubo.class,"ubo_update",ubo,userId,uboDeclarationId);
+        return this.updateObject(Ubo.class,"ubo_update",ubo,userId,uboDeclarationId,ubo.getId());		
     }
 
     @Override
